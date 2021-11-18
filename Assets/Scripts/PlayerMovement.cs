@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed;
+    public float SpeedMul = 1f;
+    private Rigidbody2D rb;
 
     public GameObject playerPig;
     // Start is called before the first frame update
     void Start()
     {
+        rb = GetComponent<RigidBody2D>();
 
     }
 
